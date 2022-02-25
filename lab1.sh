@@ -31,7 +31,7 @@ echo " "
 DATE=$(date -d "$date_str" +%s)
     echo "$DATE"
     echo "$date_str"
-    Time=$(stat -c %z "$NAME")
+    Time=$(stat -c %Z "$NAME")
     echo "$Time"
     if [[ $Time > $DATE ]]
     then
